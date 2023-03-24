@@ -9,6 +9,7 @@ const OrderSchema = new mongoose.Schema(
             },
             quantity: { type: Number }
         }],
+        coupon_code: { type: String },
         amount: { type: Number }
     },
     {

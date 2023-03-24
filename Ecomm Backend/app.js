@@ -5,6 +5,7 @@ const dbconnect = require("./dbconnect");
 const userRoutes = require("./routers/userRoutes");
 const productRoutes = require("./routers/productRoutes");
 const orderRoutes = require("./routers/orderRoutes");
+const couponRoutes = require("./routers/couponRoutes");
 const PORT = 8080;
 
 const app = express();
@@ -29,6 +30,7 @@ dbconnect()
 app.use("/api", userRoutes);
 app.use("/api", productRoutes);
 app.use("/api", orderRoutes);
+app.use("/api", couponRoutes);
 
 app.listen(PORT, () => {
   console.log("Connected to localhost:" + PORT);
