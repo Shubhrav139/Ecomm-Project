@@ -1,11 +1,11 @@
-ECOMM Project (EBuy)-
+# ECOMM Project (EBuy)-
 
-Tech Stack-
+## Tech Stack-
 	Backend- Nodejs, Express
 	Frontend- Reactjs
 	DB- MongoDB
 
-Functionalities-
+## Functionalities-
 	1. There will be two users, Admin & User.
 	2. Both users can log in and log out.
 	3. Home page will show a catalog of products available with their details.
@@ -13,10 +13,11 @@ Functionalities-
 	5. An order will be created on checkout.
 	6. Admin can add, edit & delete products.
 
-Local Setup-
+## Local Setup-
 	1. Install required dependencies.
 	2. Setup mongoDB in local.
 	3. Add users in DB by running following command in mongo terminal.
+  ```
 db.users.insertMany([
 {
   "name": "Admin",
@@ -37,7 +38,9 @@ db.users.insertMany([
   "__v": 0
 }
 ]) 
+```
 	4. Add sample products using following command-
+```
 db.products.insertMany([
 {
         "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -76,5 +79,5 @@ db.products.insertMany([
         "quantity": 30
     }
 ])
-
+```
 	5. Run backend and frontend.
